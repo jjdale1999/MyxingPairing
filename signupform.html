@@ -10,6 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="css/signupform.css"/>
+      <script src="scripts/js/signupform.js"></script>
+
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
 </head>
 <body class="form-v10">
 	<div class="page-content">
@@ -17,17 +21,7 @@
 			<form class="form-detail" action="#" method="post" id="myform">
 				<div class="form-left">
 					<h2>General Infomation</h2>
-					<div class="form-row">
-						<select name="title">
-						    <option class="option" value="title">Title</option>
-						    <option class="option" value="businessman">Businessman</option>
-						    <option class="option" value="reporter">Reporter</option>
-						    <option class="option" value="secretary">Secretary</option>
-						</select>
-						<span class="select-btn">
-						  	<i class="zmdi zmdi-chevron-down"></i>
-						</span>
-					</div>
+					
 					<div class="form-group">
 						<div class="form-row form-row-1">
 							<input type="text" name="first_name" id="first_name" class="input-text" placeholder="First Name" required>
@@ -36,12 +30,48 @@
 							<input type="text" name="last_name" id="last_name" class="input-text" placeholder="Last Name" required>
 						</div>
 					</div>
+					<div class="form-group">
+						<div class="form-row form-row-1">
+							<input type="text" name="code" class="code" id="code" placeholder="Area Code +" required>
+						</div>
+						<div class="form-row form-row-2">
+							<input type="text" name="phone" class="phone" id="phone" placeholder="Phone Number" required>
+						</div>
+					</div>
+					<div class="form-row">
+						<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">
+					</div>
+					<div class="form-group">
+						
+						<div class="form-row form-row-3">
+							<select name="gender">
+							    <option class="option" value="gender">Gender</option>
+							    <option class="option" value="female">Female</option>
+							    <option class="option" value="male">Male</option>
+							    <option class="option" value="other">Other</option>
+							</select>
+							<span class="select-btn">
+							  	<i class="zmdi zmdi-chevron-down"></i>
+							</span>
+						</div>
+						<div class="form-row form-row-4">
+							<select id="age" name="age">
+								<option value="age">Age</option>
+							    <option value="17">17</option>
+							    <option value="18">18</option>
+							    <option value="19">19</option>
+							    <option value="20">20</option>
+							</select>
+							<span class="select-btn">
+							  	<i class="zmdi zmdi-chevron-down"></i>
+							</span>
+						</div>
+					</div>
 					<div class="form-row">
 						<select name="position">
 						    <option value="position">Position</option>
-						    <option value="director">Director</option>
-						    <option value="manager">Manager</option>
-						    <option value="employee">Employee</option>
+						    <option value="director">Mentee</option>
+						    <option value="manager">Mentor</option>
 						</select>
 						<span class="select-btn">
 						  	<i class="zmdi zmdi-chevron-down"></i>
@@ -50,23 +80,10 @@
 					<div class="form-row">
 						<input type="text" name="company" class="company" id="company" placeholder="Company" required>
 					</div>
-					<div class="form-group">
-						<div class="form-row form-row-3">
-							<input type="text" name="business" class="business" id="business" placeholder="Business Arena" required>
-						</div>
-						<div class="form-row form-row-4">
-							<select name="employees">
-							    <option value="employees">Employees</option>
-							    <option value="trainee">Trainee</option>
-							    <option value="colleague">Colleague</option>
-							    <option value="associate">Associate</option>
-							</select>
-							<span class="select-btn">
-							  	<i class="zmdi zmdi-chevron-down"></i>
-							</span>
-						</div>
-					</div>
+				
+					
 				</div>
+
 				<div class="form-right">
 					<h2>Contact Details</h2>
 					<div class="form-row">
@@ -77,26 +94,31 @@
 					</div>
 					<div class="form-group">
 						<div class="form-row form-row-1">
-							<input type="text" name="zip" class="zip" id="zip" placeholder="Zip Code" required>
-						</div>
-						<div class="form-row form-row-2">
-							<select name="place">
-							    <option value="place">Place</option>
-							    <option value="Street">Street</option>
-							    <option value="District">District</option>
-							    <option value="City">City</option>
+							<select name="year">
+							    <option value="year">Year of Study</option>
+							    <option value="1">1st</option>
+							    <option value="2">2nd</option>
+							    <option value="3">3rd</option>
+							    <option value="postgrad">Post-Graduate</option>
+
 							</select>
 							<span class="select-btn">
 							  	<i class="zmdi zmdi-chevron-down"></i>
 							</span>
 						</div>
+						<div class="form-row form-row-2">
+							<input type="text" name="zip" class="zip" id="zip" placeholder="ID NUMBER" required>
+						</div>
+						
 					</div>
 					<div class="form-row">
-						<select name="country">
-						    <option value="country">Country</option>
-						    <option value="Vietnam">Vietnam</option>
-						    <option value="Malaysia">Malaysia</option>
-						    <option value="India">India</option>
+						<select name="department">
+						    <option value="department">Department</option>
+						    <option value="compsci">Computer Science </option>
+						    <option value="math">Mathematics</option>
+						    <option value="physics">Physics</option>
+						    <option value="chem">Chemistry</option>
+
 						</select>
 						<span class="select-btn">
 						  	<i class="zmdi zmdi-chevron-down"></i>
@@ -113,6 +135,28 @@
 					<div class="form-row">
 						<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your Email">
 					</div>
+					<div class="form-group">
+						<div class=" form-row add-bar">
+				            <i class="fas fa-clipboard-list mg-10 fs-large"></i>
+				            <input type="text" id="new-task" placeholder="Add Course Code">
+				            <ion-icon id="add-button" name="add-circle-outline" class="mg-10 fs-large"></ion-icon>
+			        	</div>
+				        <div class=" form-row menu-bar">
+				            <div id="check-all-button">
+				                <ion-icon name="checkmark-done-outline"></ion-icon>
+				                <p id = "completeAll" class="fs-med" >Completed Courses</p>
+				            </div>
+				            <p id = "clearComplete" class="fs-med">Clear All Courses</p>
+				        </div>
+			        	<hr>
+			        	</div>
+			        <div class="form-group">
+			        	<div id = "show-all" class="form-row tasks-container">
+			            
+			        	</div>
+			        </div>
+			        
+					
 					<div class="form-checkbox">
 						<label class="container"><p>I do accept the <a href="#" class="text">Terms and Conditions</a> of your site.</p>
 						  	<input type="checkbox" name="checkbox">
@@ -120,7 +164,7 @@
 						</label>
 					</div>
 					<div class="form-row-last">
-						<input type="submit" name="register" class="register" value="Register Badge">
+						<input type="submit" name="register" class="register" value="Register">
 					</div>
 				</div>
 			</form>
