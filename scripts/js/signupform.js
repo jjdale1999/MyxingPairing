@@ -22,7 +22,7 @@ var showInprogress = document.getElementById('showInprogress');
 var showNotStarted = document.getElementById('showNotStarted');
 
 //var task_card_string = "<div class=\"task-card not-started\"><div class=\"status-icon\"></div><p class=\"task-text\"></p><p class=\"task-status\">Not-Started</p><ion-icon class=\"delete fs-large mg-10\" name=\"close-circle-outline\"></ion-icon></div>"
-var task_card_string = "<div class=\"status-icon\"></div><p class=\"task-text\"><p class=\"task-status color-red\"></p><ion-icon class=\"delete fs-large mg-10\" name=\"close-circle-outline\"></ion-icon>"
+var task_card_string = "<div class=\"status-icon \"></div><p class=\"task-text\"><p class=\"task-status color-red\"></p><ion-icon class=\"delete fs-large mg-10\" name=\"close-circle-outline\"></ion-icon>"
 var task_count = 5;
 eventSetter();
 

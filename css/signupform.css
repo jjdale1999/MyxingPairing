@@ -67,6 +67,9 @@ body {
 .form-v10-content .form-detail .form-right h2 {
 	color: #fff;
 }
+.form-right{
+	color: #fff;
+}
 .form-v10-content .form-detail .form-group {
 	display: flex;
 	display: -webkit-flex;
@@ -407,6 +410,7 @@ main{
     background-color:lightgray;
     height:40px;
     border-radius:5px;
+    margin-left: 13%;
 }
 #check-all-button{
     cursor: pointer;
@@ -460,22 +464,14 @@ input:focus, textarea:focus, select:focus{
     transform:translateX(100%);
 }
 .status-icon{
-    border:1px solid black;
+    border:1px solid white;
     width:15px;
     height:15px;
     border-radius:50%;
     margin:5px;
 }
 
-.not-started div{
-    background-color:#fc5753;
-}
-.Completed div{
-    background-color:#33c747;
-}
-.In-progress div{
-    background-color:#2196f3;
-}
+
 
 .task-text{
     /* flex-grow:2; */
@@ -487,27 +483,8 @@ input:focus, textarea:focus, select:focus{
     /* color:#fc5753; */
     font-family: monospace;
 }
-.footer{
-    display:flex;
-    justify-content: space-between;
-    margin:5px 0;
-}
-.task-count{
-    display:flex;
-    
-}
 
-.filter{
-    display: flex;
-    justify-content: space-between;
-    font-size:0.8rem;
-    color:gray;
-    /* letter-spacing: 0.0001rem;     */
-}
-.filter-button{
-    margin:0 4px;
-    cursor: pointer;
-}
+
 /*Other classes*/
 .mg-10{
     margin:10px;
@@ -526,15 +503,7 @@ font-size: 0.7rem;
 .bold{
     font-weight: 600;
 }
-.color-red{
-    color:#fc5753;;
-}
-.color-green{
-    color:#33c747;
-}
-.color-blue{
-    color:#2196f3
-}
+
 @media screen and (max-width:700px){
 	main{
         width:80vw;
