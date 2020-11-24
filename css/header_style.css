@@ -1,0 +1,28 @@
+.logo img{
+	height: 100px;
+    width: 160px;	
+}
+/*.notification img{
+	height: 30px;
+	width: 30px;
+	color: white;
+}*/
+.profile button{
+	margin-top: 20px;
+	background: url('../images/picture.jpg');
+	background-position: center;
+	background-size: 45px;
+    border-radius:50%;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+ 	display: grid;
+ 	grid-template-columns: 10fr 1fr 1fr;
+ 	background-color: #000000;
+}
+.headimg{
+	width:45px;
+	height:45px;
+}
