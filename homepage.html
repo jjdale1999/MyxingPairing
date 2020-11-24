@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor me header</title>
+    <link href="bootstrap\css\bootstrap.min.css" rel="stylesheet">
+       <link href="css\header_style.css" rel="stylesheet">
+    <link href="css\sidebar_style.css" rel="stylesheet">
+         <link href="css\colors.css" rel="stylesheet">
+     <link href="css\main_style.css" rel="stylesheet">
+
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <script src="bootstrap\js\bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<body>
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+        <!-- left sidebar -->
+        <div class="col-md-2 fixed pl-0 py-2 bg-black left">
+            <ul class="nav flex-md-column flex-nowrap justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-truncate" href="#">Top on mobile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fixed</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+        <!-- center content -->
+        <div class="invisible col-md-2 fixed"><!--ghost div to push middle section offset--></div>
+        <div class="col fluid d-flex flex-column p-0">
+            <nav id="topNav" class="navbar navbar-expand-md fixed-top navbar-dark bg-black">
+                <a class="navbar-brand" href="#first">Bootstrap 4 Codeply</a>
+                <button class="navbar-toggler ml-auto py-2" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+                    ☰
+                </button>
+                <div class="collapse navbar-collapse" id="collapsingNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" data-toggle="modal" title="A free Bootstrap theme" href="#aboutModal">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- main content -->
+            <div class="flex-grow maincont">
+                <div class="col-12 py-4">
+                        
+                        <div class="main" id="boxes">
+                                <div class="box" id="box1">
+                                    <div id="box1title" class="titles">
+                                        Notifications
+                                    </div>
+                                    <div id="contentbox1" class="contentbox">
+                                        <div class="toast-header">
+                                            <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                              preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                              <rect fill="#red" width="100%" height="100%" /></svg>
+                                            <strong class="mr-auto">message/notif</strong>
+                                            <small>11 mins ago</small>
+                                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="toast-header">
+                                            <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                              preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                              <rect fill="#red" width="100%" height="100%" /></svg>
+                                            <strong class="mr-auto">message/notif</strong>
+                                            <small>11 mins ago</small>
+                                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="toast-header">
+                                            <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                              preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                              <rect fill="#red" width="100%" height="100%" /></svg>
+                                            <strong class="mr-auto">message/notif</strong>
+                                            <small>11 mins ago</small>
+                                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="toast-header">
+                                            <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                              preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                              <rect fill="#red" width="100%" height="100%" /></svg>
+                                            <strong class="mr-auto">message/notif</strong>
+                                            <small>11 mins ago</small>
+                                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="toast-header">
+                                            <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                              preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                              <rect fill="#red" width="100%" height="100%" /></svg>
+                                            <strong class="mr-auto">message/notif</strong>
+                                            <small>11 mins ago</small>
+                                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="toast-header">
+                                            <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                              preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                              <rect fill="#red" width="100%" height="100%" /></svg>
+                                            <strong class="mr-auto">message/notif</strong>
+                                            <small>11 mins ago</small>
+                                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="toast-header">
+                                            <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                              preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                              <rect fill="#red" width="100%" height="100%" /></svg>
+                                            <strong class="mr-auto">message/notif</strong>
+                                            <small>11 mins ago</small>
+                                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+
+                                        <div class="toast-header">
+                                            <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                              preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                              <rect fill="#red" width="100%" height="100%" /></svg>
+                                            <strong class="mr-auto">message/notif</strong>
+                                            <small>11 mins ago</small>
+                                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                              <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                         
+                                    </div>
+                                </div>
+                                <div  class="box_pair">
+                                    <div class="box" id="box2">
+                                        <div id="box2title"class="titles">
+                                            Notifications    
+                                        </div>
+                                        <div id="contentbox2" class="contentbox">
+                                            <div class="toast-header">
+                                                <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                  <rect fill="#red" width="100%" height="100%" /></svg>
+                                                <strong class="mr-auto">message/notif</strong>
+                                                <small>11 mins ago</small>
+                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="toast-header">
+                                                <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                  <rect fill="#red" width="100%" height="100%" /></svg>
+                                                <strong class="mr-auto">message/notif</strong>
+                                                <small>11 mins ago</small>
+                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="toast-header">
+                                                <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                  <rect fill="#red" width="100%" height="100%" /></svg>
+                                                <strong class="mr-auto">message/notif</strong>
+                                                <small>11 mins ago</small>
+                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="toast-header">
+                                                <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                  <rect fill="#red" width="100%" height="100%" /></svg>
+                                                <strong class="mr-auto">message/notif</strong>
+                                                <small>11 mins ago</small>
+                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                    
+                                        </div>
+                                    </div>
+                                    <div class="box" id="box3">
+                                        <div id="box3title"class="titles">
+                                            Reminders
+                                        </div>
+                                        <div id="contentbox3" class="contentbox">
+                                            <div class="toast-header">
+                                                <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                  <rect fill="#red" width="100%" height="100%" /></svg>
+                                                <strong class="mr-auto">message/notif</strong>
+                                                <small>11 mins ago</small>
+                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="toast-header">
+                                                <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                  <rect fill="#red" width="100%" height="100%" /></svg>
+                                                <strong class="mr-auto">message/notif</strong>
+                                                <small>11 mins ago</small>
+                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="toast-header">
+                                                <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                  <rect fill="#red" width="100%" height="100%" /></svg>
+                                                <strong class="mr-auto">message/notif</strong>
+                                                <small>11 mins ago</small>
+                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="toast-header">
+                                                <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                  preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                  <rect fill="#red" width="100%" height="100%" /></svg>
+                                                <strong class="mr-auto">message/notif</strong>
+                                                <small>11 mins ago</small>
+                                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div  class="box_pair">
+                                    <div class="box" id="box4">
+                                        <div id="box4title" class="titles">
+                                            Notifons
+                                        </div>
+                                        <div id="contentbox4" class="contentbox">
+                                                <div class="toast-header">
+                                                    <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                      preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                      <rect fill="#red" width="100%" height="100%" /></svg>
+                                                    <strong class="mr-auto">message/notif</strong>
+                                                    <small>11 mins ago</small>
+                                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="toast-header">
+                                                    <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                      preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                      <rect fill="#red" width="100%" height="100%" /></svg>
+                                                    <strong class="mr-auto">message/notif</strong>
+                                                    <small>11 mins ago</small>
+                                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="toast-header">
+                                                    <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                      preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                      <rect fill="#red" width="100%" height="100%" /></svg>
+                                                    <strong class="mr-auto">message/notif</strong>
+                                                    <small>11 mins ago</small>
+                                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+
+                                                <div class="toast-header">
+                                                    <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                      preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                      <rect fill="#red" width="100%" height="100%" /></svg>
+                                                    <strong class="mr-auto">message/notif</strong>
+                                                    <small>11 mins ago</small>
+                                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="box" id="box5" >
+                                        <div id="box5title" class="titles" >
+                                            Mentor Conters
+                                        </div>
+                                        <div id="contentbox5" class="contentbox">
+                                                <div class="toast-header">
+                                                    <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                      preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                      <rect fill="#red" width="100%" height="100%" /></svg>
+                                                    <strong class="mr-auto">message/notif</strong>
+                                                    <small>11 mins ago</small>
+                                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="toast-header">
+                                                    <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                      preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                      <rect fill="#red" width="100%" height="100%" /></svg>
+                                                    <strong class="mr-auto">message/notif</strong>
+                                                    <small>11 mins ago</small>
+                                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="toast-header">
+                                                    <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                      preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                      <rect fill="#red" width="100%" height="100%" /></svg>
+                                                    <strong class="mr-auto">message/notif</strong>
+                                                    <small>11 mins ago</small>
+                                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+
+                                                <div class="toast-header">
+                                                    <svg class=" rounded mr-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                      preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                                                      <rect fill="#red" width="100%" height="100%" /></svg>
+                                                    <strong class="mr-auto">message/notif</strong>
+                                                    <small>11 mins ago</small>
+                                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                
+                        </div>
+
+                </div>
+
+    
+            </div>
+            <!-- /main content -->
+
+            <footer class="navbar navbar-expand bg-black navbar-light">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Footer</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">More</a></li>
+                </ul>
+            </footer>
+
+        </div>
+        
+       
+    </div>
+</div>
+
+</body>
+
+</html>
